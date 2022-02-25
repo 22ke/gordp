@@ -1,4 +1,4 @@
-module gordp
+module github.com/22ke/gordp
 
 go 1.17
 
