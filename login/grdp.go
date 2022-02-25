@@ -49,6 +49,7 @@ func (g *Client) LoginForSSL(domain, user, pwd string) error {
 		return fmt.Errorf("[dial err] %v", err)
 	}
 	defer conn.Close()
+
 	glog.Info(conn.LocalAddr().String())
 
 	g.tpkt = tpkt.New(core.NewSocketLayer(conn), nla.NewNTLMv2(domain, user, pwd))
