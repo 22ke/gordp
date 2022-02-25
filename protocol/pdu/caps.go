@@ -5,9 +5,9 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"gordp/core"
-	"gordp/glog"
-	"gordp/protocol/t125/gcc"
+	"github.com/22ke/gordp/core"
+	"github.com/22ke/gordp/glog"
+	"github.com/22ke/gordp/protocol/t125/gcc"
 	"io"
 
 	"github.com/lunixbochs/struc"
@@ -16,17 +16,17 @@ import (
 type CapsType uint16
 
 const (
-	CAPSTYPE_GENERAL     CapsType = 0x0001
-	CAPSTYPE_BITMAP               = 0x0002
-	CAPSTYPE_ORDER                = 0x0003
-	CAPSTYPE_BITMAPCACHE          = 0x0004
-	CAPSTYPE_CONTROL              = 0x0005
-	CAPSTYPE_ACTIVATION           = 0x0007
-	CAPSTYPE_POINTER              = 0x0008
-	CAPSTYPE_SHARE                = 0x0009
-	CAPSTYPE_COLORCACHE           = 0x000A
-	CAPSTYPE_SOUND                = 0x000C
-	CAPSTYPE_INPUT                = 0x000D
+	CAPSTYPE_GENERAL                 CapsType = 0x0001
+	CAPSTYPE_BITMAP                           = 0x0002
+	CAPSTYPE_ORDER                            = 0x0003
+	CAPSTYPE_BITMAPCACHE                      = 0x0004
+	CAPSTYPE_CONTROL                          = 0x0005
+	CAPSTYPE_ACTIVATION                       = 0x0007
+	CAPSTYPE_POINTER                          = 0x0008
+	CAPSTYPE_SHARE                            = 0x0009
+	CAPSTYPE_COLORCACHE                       = 0x000A
+	CAPSTYPE_SOUND                            = 0x000C
+	CAPSTYPE_INPUT                            = 0x000D
 	CAPSTYPE_FONT                             = 0x000E
 	CAPSTYPE_BRUSH                            = 0x000F
 	CAPSTYPE_GLYPHCACHE                       = 0x0010

@@ -5,10 +5,10 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"gordp/core"
-	"gordp/emission"
-	"gordp/glog"
-	"gordp/protocol/tpkt"
+	"github.com/22ke/gordp/core"
+	"github.com/22ke/gordp/emission"
+	"github.com/22ke/gordp/glog"
+	"github.com/22ke/gordp/protocol/tpkt"
 
 	"github.com/lunixbochs/struc"
 )
@@ -257,7 +257,7 @@ func (x *X224) recvConnectionConfirm(s []byte) {
 		err := x.transport.(*tpkt.TPKT).StartNLA()
 		if err != nil {
 			glog.Error("start NLA failed:", err)
-			x.Emit("error",err)//todo
+			x.Emit("error", err) //todo
 			return
 		}
 		x.Emit("connect", x.selectedProtocol)

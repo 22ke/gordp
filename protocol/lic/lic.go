@@ -1,7 +1,7 @@
 package lic
 
 import (
-	"gordp/core"
+	"github.com/22ke/gordp/core"
 	"io"
 )
 

@@ -5,10 +5,10 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"gordp/core"
-	"gordp/emission"
-	"gordp/glog"
-	"gordp/protocol/t125/gcc"
+	"github.com/22ke/gordp/core"
+	"github.com/22ke/gordp/emission"
+	"github.com/22ke/gordp/glog"
+	"github.com/22ke/gordp/protocol/t125/gcc"
 )
 
 type PDULayer struct {

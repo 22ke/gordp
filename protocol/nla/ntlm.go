@@ -6,12 +6,11 @@ import (
 	"crypto/rc4"
 	"encoding/binary"
 	"encoding/hex"
-	"gordp/core"
-	"gordp/glog"
+	"github.com/22ke/gordp/core"
+	"github.com/22ke/gordp/glog"
 	"time"
 
 	"github.com/lunixbochs/struc"
-
 )
 
 const (

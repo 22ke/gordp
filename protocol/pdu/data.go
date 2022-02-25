@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"gordp/core"
-	"gordp/glog"
+	"github.com/22ke/gordp/core"
+	"github.com/22ke/gordp/glog"
 	"io"
 
 	"github.com/lunixbochs/struc"

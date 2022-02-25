@@ -4,7 +4,7 @@ import (
 	"crypto/hmac"
 	"crypto/md5"
 	"crypto/rc4"
-	"gordp/core"
+	"github.com/22ke/gordp/core"
 	"strings"
 
 	"golang.org/x/crypto/md4"

@@ -2,15 +2,15 @@ package main
 
 import (
 	"fmt"
-	"gordp/glog"
+	"github.com/22ke/gordp/glog"
 	"strings"
 )
 
-func main(){
-	domain   := ""
+func main() {
+	domain := ""
 	username := "kekee"
 	password := "97555"
-	target   := "127.0.0.1:3389"
+	target := "127.0.0.1:3389"
 
 	var err error
 	g := NewClient(target, glog.NONE)
@@ -20,15 +20,14 @@ func main(){
 		return
 	}
 	//println(err.Error())
-	if strings.Contains(err.Error(),"success") {
-		println("login success , ",target," : ",username," : ",password)
+	if strings.Contains(err.Error(), "success") {
+		println("login success , ", target, " : ", username, " : ", password)
 	}
 	//if err.Error() != "PROTOCOL_RDP" {
 	//	fmt.Println("Login Error:", err)
 	//	return
 	//}
 }
-
 
 func testrdp(target string) {
 	domain := ""

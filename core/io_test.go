@@ -3,9 +3,8 @@ package core_test
 import (
 	"bytes"
 	"encoding/hex"
+	"github.com/22ke/gordp/core"
 	"testing"
-
-	"kscan/lib/grdp/core"
 )
 
 func TestWriteUInt16LE(t *testing.T) {

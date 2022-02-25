@@ -1,7 +1,7 @@
 package core
 
 import (
-	"gordp/glog"
+	"github.com/22ke/gordp/glog"
 	"unsafe"
 )
 

@@ -2,9 +2,8 @@ package nla_test
 
 import (
 	"encoding/hex"
-	"gordp/protocol/nla"
+	"github.com/22ke/gordp/protocol/nla"
 	"testing"
-
 )
 
 func TestNTOWFv2(t *testing.T) {

@@ -4,10 +4,10 @@ import (
 	"bytes"
 	"encoding/hex"
 	"fmt"
-	"gordp/core"
-	"gordp/emission"
-	"gordp/glog"
-	"gordp/protocol/nla"
+	"github.com/22ke/gordp/core"
+	"github.com/22ke/gordp/emission"
+	"github.com/22ke/gordp/glog"
+	"github.com/22ke/gordp/protocol/nla"
 )
 
 // take idea from https://github.com/Madnikulin50/gordp

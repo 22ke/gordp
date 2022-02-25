@@ -3,9 +3,9 @@ package gcc
 import (
 	"bytes"
 	"errors"
-	"gordp/core"
-	"gordp/glog"
-	"gordp/protocol/t125/per"
+	"github.com/22ke/gordp/core"
+	"github.com/22ke/gordp/glog"
+	"github.com/22ke/gordp/protocol/t125/per"
 	"io"
 	"os"
 

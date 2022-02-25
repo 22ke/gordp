@@ -2,7 +2,7 @@ package nla
 
 import (
 	"encoding/asn1"
-	"gordp/glog"
+	"github.com/22ke/gordp/glog"
 )
 
 type NegoToken struct {

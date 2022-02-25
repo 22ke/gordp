@@ -3,21 +3,20 @@ package main
 import (
 	"errors"
 	"fmt"
-	"gordp/core"
-	"gordp/glog"
-	"gordp/protocol/nla"
-	"gordp/protocol/pdu"
-	"gordp/protocol/rfb"
-	"gordp/protocol/sec"
-	"gordp/protocol/t125"
-	"gordp/protocol/tpkt"
-	"gordp/protocol/x224"
+	"github.com/22ke/gordp/core"
+	"github.com/22ke/gordp/glog"
+	"github.com/22ke/gordp/protocol/nla"
+	"github.com/22ke/gordp/protocol/pdu"
+	"github.com/22ke/gordp/protocol/rfb"
+	"github.com/22ke/gordp/protocol/sec"
+	"github.com/22ke/gordp/protocol/t125"
+	"github.com/22ke/gordp/protocol/tpkt"
+	"github.com/22ke/gordp/protocol/x224"
 	"log"
 	"net"
 	"os"
 	"sync"
 	"time"
-
 )
 
 const (
