@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/22ke/gordp/glog"
+	"github.com/22ke/gordp/login"
 	"strings"
 )
 
@@ -13,9 +14,9 @@ func main() {
 	target := "127.0.0.1:3389"
 
 	var err error
-	g := NewClient(target, glog.NONE)
+	g := login.NewClient(target, glog.NONE)
 	//SSL协议登录测试
-	err = g.loginForSSL(domain, username, password)
+	err = g.LoginForSSL(domain, username, password)
 	if err == nil {
 		return
 	}
@@ -35,9 +36,9 @@ func testrdp(target string) {
 	password := "970903Fj"
 	//target = "180.102.17.30:3389"
 	var err error
-	g := NewClient(target, glog.NONE)
+	g := login.NewClient(target, glog.NONE)
 	//SSL协议登录测试
-	err = g.loginForSSL(domain, username, password)
+	err = g.LoginForSSL(domain, username, password)
 	if err == nil {
 		fmt.Println("Login Success")
 		return
@@ -47,7 +48,7 @@ func testrdp(target string) {
 		return
 	}
 	//RDP协议登录测试 //个人使用起来不太准确
-	//err = g.loginForRDP(domain, username, password)
+	//err = g.LoginForRDP(domain, username, password)
 	//if err == nil {
 	//	fmt.Println("Login Success")
 	//	return

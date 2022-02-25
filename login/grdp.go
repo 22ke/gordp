@@ -1,4 +1,4 @@
-package main
+package login
 
 import (
 	"errors"
@@ -43,7 +43,7 @@ func NewClient(host string, logLevel glog.LEVEL) *Client {
 	}
 }
 
-func (g *Client) loginForSSL(domain, user, pwd string) error {
+func (g *Client) LoginForSSL(domain, user, pwd string) error {
 	conn, err := net.DialTimeout("tcp", g.Host, 3*time.Second)
 	if err != nil {
 		return fmt.Errorf("[dial err] %v", err)
@@ -110,7 +110,7 @@ func (g *Client) loginForSSL(domain, user, pwd string) error {
 	return err
 }
 
-func (g *Client) loginForRDP(domain, user, pwd string) error {
+func (g *Client) LoginForRDP(domain, user, pwd string) error {
 	conn, err := net.DialTimeout("tcp", g.Host, 3*time.Second)
 	if err != nil {
 		return fmt.Errorf("[dial err] %v", err)
@@ -193,7 +193,7 @@ func Login(target, domain, username, password string) error {
 	var err error
 	g := NewClient(target, glog.NONE)
 	//SSL协议登录测试
-	err = g.loginForSSL(domain, username, password)
+	err = g.LoginForSSL(domain, username, password)
 	if err == nil {
 		return nil
 	}
@@ -201,7 +201,7 @@ func Login(target, domain, username, password string) error {
 		return err
 	}
 	//RDP协议登录测试
-	err = g.loginForRDP(domain, username, password)
+	err = g.LoginForRDP(domain, username, password)
 	if err == nil {
 		return nil
 	} else {
@@ -213,7 +213,7 @@ func LoginForSSL(target, domain, username, password string) error {
 	var err error
 	g := NewClient(target, glog.NONE)
 	//SSL协议登录测试
-	err = g.loginForSSL(domain, username, password)
+	err = g.LoginForSSL(domain, username, password)
 	if err == nil {
 		return nil
 	}
@@ -224,7 +224,7 @@ func LoginForRDP(target, domain, username, password string) error {
 	var err error
 	g := NewClient(target, glog.NONE)
 	//SSL协议登录测试
-	err = g.loginForRDP(domain, username, password)
+	err = g.LoginForRDP(domain, username, password)
 	if err == nil {
 		return nil
 	}
