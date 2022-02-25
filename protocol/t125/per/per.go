@@ -2,10 +2,9 @@ package per
 
 import (
 	"bytes"
-	"gordp/core"
-	"gordp/glog"
+	"github.com/22ke/gordp/core"
+	"github.com/22ke/gordp/glog"
 	"io"
-
 )
 
 func ReadEnumerates(r io.Reader) (uint8, error) {
