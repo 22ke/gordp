@@ -33,8 +33,7 @@ func main() {
 func testrdp(target string) {
 	domain := ""
 	username := "kekee"
-	password := "970903Fj"
-	//target = "180.102.17.30:3389"
+	password := "9777777"
 	var err error
 	g := login.NewClient(target, glog.NONE)
 	//SSL协议登录测试
@@ -60,9 +59,7 @@ func testrdp(target string) {
 
 //func TestName(t *testing.T) {
 //	targetArr := []string{
-//		//"50.57.49.172:3389",
-//		//"20.49.22.250:3389",
-//		"172.31.61.82:3389",
+//		"177.37.67.87:3389",
 //	}
 //	for _, target := range targetArr {
 //		fmt.Println(target)
