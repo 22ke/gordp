@@ -3,8 +3,9 @@ package ber
 import (
 	"errors"
 	"fmt"
-	"github.com/22ke/gordp/core"
 	"io"
+
+	"github.com/22ke/gordp/core"
 )
 
 const (

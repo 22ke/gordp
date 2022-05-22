@@ -3,12 +3,13 @@ package gcc
 import (
 	"bytes"
 	"errors"
-	"github.com/22ke/gordp/core"
-	"github.com/22ke/gordp/glog"
-	"github.com/22ke/gordp/protocol/t125/per"
 	"io"
 	"os"
 
+	"github.com/22ke/gordp/glog"
+
+	"github.com/22ke/gordp/core"
+	"github.com/22ke/gordp/protocol/t125/per"
 	"github.com/lunixbochs/struc"
 )
 

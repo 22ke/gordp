@@ -257,7 +257,6 @@ func (x *X224) recvConnectionConfirm(s []byte) {
 		err := x.transport.(*tpkt.TPKT).StartNLA()
 		if err != nil {
 			glog.Error("start NLA failed:", err)
-			x.Emit("error", err) //todo
 			return
 		}
 		x.Emit("connect", x.selectedProtocol)

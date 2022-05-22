@@ -5,11 +5,12 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"github.com/22ke/gordp/core"
-	"github.com/22ke/gordp/glog"
-	"github.com/22ke/gordp/protocol/t125/gcc"
 	"io"
 
+	"github.com/22ke/gordp/glog"
+
+	"github.com/22ke/gordp/core"
+	"github.com/22ke/gordp/protocol/t125/gcc"
 	"github.com/lunixbochs/struc"
 )
 

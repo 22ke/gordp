@@ -5,6 +5,7 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
+
 	"github.com/22ke/gordp/core"
 	"github.com/22ke/gordp/emission"
 	"github.com/22ke/gordp/glog"

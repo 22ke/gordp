@@ -4,10 +4,10 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/22ke/gordp/core"
-	"github.com/22ke/gordp/glog"
 	"io"
 
+	"github.com/22ke/gordp/core"
+	"github.com/22ke/gordp/glog"
 	"github.com/lunixbochs/struc"
 )
 

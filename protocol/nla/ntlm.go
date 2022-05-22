@@ -6,10 +6,10 @@ import (
 	"crypto/rc4"
 	"encoding/binary"
 	"encoding/hex"
-	"github.com/22ke/gordp/core"
-	"github.com/22ke/gordp/glog"
 	"time"
 
+	"github.com/22ke/gordp/core"
+	"github.com/22ke/gordp/glog"
 	"github.com/lunixbochs/struc"
 )
 

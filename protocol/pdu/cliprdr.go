@@ -2,6 +2,7 @@ package pdu
 
 import (
 	"bytes"
+
 	"github.com/22ke/gordp/core"
 	"github.com/22ke/gordp/glog"
 )

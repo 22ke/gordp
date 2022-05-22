@@ -6,14 +6,15 @@ import (
 	"crypto/des"
 	"encoding/hex"
 	"fmt"
-	"github.com/22ke/gordp/core"
-	"github.com/22ke/gordp/emission"
-	"github.com/22ke/gordp/glog"
 	"io"
 	"log"
 	"net"
 
 	"github.com/lunixbochs/struc"
+
+	"github.com/22ke/gordp/core"
+	"github.com/22ke/gordp/emission"
+	"github.com/22ke/gordp/glog"
 )
 
 // ProtocolVersion

@@ -102,7 +102,6 @@ func (t *TPKT) recvChallenge(data []byte) error {
 		return fmt.Errorf("read %s", err)
 	} else {
 		glog.Debug("recvChallenge Read success")
-		return fmt.Errorf("login success") ///////ddddddddd
 	}
 	return t.recvPubKeyInc(resp[:n])
 }
